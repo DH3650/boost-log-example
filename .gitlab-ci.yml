@@ -1,0 +1,14 @@
+before_script:
+  - gcc -v
+  - g++ -v
+  - cmake --version
+
+build:
+  stage: build
+  script: 
+  - mkdir build
+  - cd build
+  - cmake ..
+  - make
+
+
